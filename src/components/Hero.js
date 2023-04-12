@@ -7,8 +7,9 @@ function Hero() {
   return (
     <div className="hero-container">
       
+      {/* <iframe title="Angela Working" src='https://my.spline.design/roomgirlworkingcopy-e351c5c694eb3e3745e84590c9a661e3/' frameborder='0' width='100%' height='100%'></iframe> */}
       <iframe title="Angela Working" src='https://my.spline.design/roomgirlworkingcopy-e351c5c694eb3e3745e84590c9a661e3/' frameborder='0' width='100%' height='100%'></iframe>
-      <h1>Hi, my name is<br/> 
+      <h1>Hey, I'm<br/> 
       <span className="angela-name">Angela Skie Xu.</span></h1>
       <p>I am a Computer Science student<br/> at University of Waterloo</p>
       <div className="hero-btns">

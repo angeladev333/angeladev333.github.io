@@ -15,6 +15,11 @@
     justify-content: center;
     font-size: 3rem;
   }
+
+  .app-content {
+    min-height: 100vh;
+  }
+  
   
   /* .services {
     background-image: url('/images/img-2.jpg');
