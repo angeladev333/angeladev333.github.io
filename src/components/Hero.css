@@ -32,9 +32,13 @@ iframe {
   margin-top: -100px;
 }
 
+.angela-name {
+	color: #bd8ea4; /* Replace with your desired color */
+  }
+  
 .hero-container > p {
   margin-top: 8px;
-  color: #bd8ea4;
+  color: #301934;
   font-size: 32px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
