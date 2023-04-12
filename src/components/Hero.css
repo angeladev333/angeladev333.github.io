@@ -1,11 +1,11 @@
 iframe {
  /* margin-top: 30px; */
-	top: 60px;
+	top: 30px;
   object-fit: cover;
   width: 75%;
   height: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: 10;
   right: 0;
 }
 
@@ -21,25 +21,20 @@ iframe {
   object-fit: contain;
   z-index: -3;
   padding: 0 69px; /* add padding to make text not touch the edges */
-  position: relative; /* Add position: relative */
+  position: absolute; /* Add position: relative */
 }
   
-  /* Add a new class for text and buttons container */
-  .text-buttons-container {
-	position: relative;
-	z-index: 1;
-  }
-  
 
-.text-buttons-container > h1 {
-  color: #241717;
+  
+.hero-container > h1 {
+  color: #301934;
   font-size: 100px;
   margin-top: -100px;
 }
 
-.text-buttons-container > p {
+.hero-container > p {
   margin-top: 8px;
-  color: #bd8e8e;
+  color: #bd8ea4;
   font-size: 32px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
