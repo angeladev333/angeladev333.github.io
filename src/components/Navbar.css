@@ -13,7 +13,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navbar-container {
@@ -114,7 +114,7 @@
   }
 
   .nav-links:hover {
-    background-color: #F8F6F0;
+    background-color: #f8f6f0;
     color: var(--secondary);
     border-radius: 0;
   }
