@@ -6,20 +6,20 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className="hero-container">
-      <iframe
+      {/* <iframe
         title="Angela Working"
         src="https://my.spline.design/roomgirlworkingcopy-e351c5c694eb3e3745e84590c9a661e3/"
         frameborder="0"
         width="100%"
         height="100%"
-      ></iframe>
-      {/*       
+      ></iframe> */}
+
       <spline-viewer
         loading-anim
         url="https://prod.spline.design/xJCPLlJbgJRcYTut/scene.splinecode"
-      ></spline-viewer> */}
+      ></spline-viewer>
 
-      <div>
+      <div className="description">
         <h1>
           Hey, I'm
           <br />
@@ -34,7 +34,9 @@ function Hero() {
             className="btns"
             buttonStyle="btn--primary"
             buttonSize="btn--large"
-            onClick={console.log("hey")}
+            onClick={() =>
+              window.open("/assets/Angela_Xu_Resume_Apr2023.pdf", "_blank")
+            }
           >
             RESUME <i className="fas fa-arrow-circle-down"></i>
           </Button>
