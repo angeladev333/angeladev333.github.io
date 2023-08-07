@@ -13,32 +13,39 @@ function Hero() {
         width="100%"
         height="100%"
       ></iframe>
+      {/*       
+      <spline-viewer
+        loading-anim
+        url="https://prod.spline.design/xJCPLlJbgJRcYTut/scene.splinecode"
+      ></spline-viewer> */}
 
-      <h1>
-        Hey, I'm
-        <br />
-        <span className="angela-name">Angela Skie Xu.</span>
-      </h1>
-      <p>
-        I am a Computer Science student
-        <br /> at University of Waterloo
-      </p>
-      <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--primary"
-          buttonSize="btn--large"
-          onClick={console.log("hey")}
-        >
-          RESUME <i className="fas fa-arrow-circle-down"></i>
-        </Button>
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          PROJECTS
-        </Button>
+      <div>
+        <h1>
+          Hey, I'm
+          <br />
+          <span className="angela-name">Angela Skie Xu.</span>
+        </h1>
+        <p>
+          I am a Computer Science student
+          <br /> at University of Waterloo
+        </p>
+        <div className="hero-btns">
+          <Button
+            className="btns"
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+            onClick={console.log("hey")}
+          >
+            RESUME <i className="fas fa-arrow-circle-down"></i>
+          </Button>
+          <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            PROJECTS
+          </Button>
+        </div>
       </div>
     </div>
   );
