@@ -3,17 +3,9 @@ import "../App.css";
 import { Button } from "./Button";
 import "./Hero.css";
 
-function Hero() {
+function Hero(props) {
   return (
-    <div className="hero-container">
-      {/* <iframe
-        title="Angela Working"
-        src="https://my.spline.design/roomgirlworkingcopy-e351c5c694eb3e3745e84590c9a661e3/"
-        frameborder="0"
-        width="100%"
-        height="100%"
-      ></iframe> */}
-
+    <div id={props.id} className="hero-container">
       <spline-viewer
         loading-anim
         url="https://prod.spline.design/xJCPLlJbgJRcYTut/scene.splinecode"

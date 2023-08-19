@@ -22,6 +22,7 @@ function CardItem(props) {
           <h5 className="cards__item__text">{props.text}</h5>
           <br></br>
           <p className="cards__item__techstack">{props.techstack}</p>
+          <br></br>
           <p className="cards__item__description">{props.description}</p>
           <p className="cards__item__collaboration">{props.collaboration}</p>
         </div>

@@ -40,7 +40,7 @@ spline-viewer {
 .hero-container h1 {
   text-align: left;
   color: var(--secondary);
-  font-size: 100px;
+  font-size: 90px;
   margin-top: 0px;
 }
 
@@ -51,9 +51,8 @@ spline-viewer {
 .hero-container p {
   margin-top: 8px;
   color: var(--secondary);
-  font-size: 32px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 .hero-container .description {
@@ -67,7 +66,7 @@ spline-viewer {
 }
 
 .hero-btns .btn {
-  margin: 6px;
+  margin: 12px;
 }
 
 .fa-play-circle {
@@ -88,7 +87,7 @@ spline-viewer {
   }
 
   .hero-container > p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .btn-mobile {

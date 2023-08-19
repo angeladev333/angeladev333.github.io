@@ -1,27 +1,30 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
-  
-  .home,
-  .services,
-  .products,
-  .sign-up {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
 
-  .app-content {
-    min-height: 105vh;
-  }
-  
-  
-  /* .services {
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.app-content {
+  min-height: 105vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* .services {
     background-image: url('/images/img-2.jpg');
     background-position: center;
     background-size: cover;

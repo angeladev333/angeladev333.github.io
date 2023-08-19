@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -22,55 +22,59 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            HOME
-            <i className='fas fa-star' />
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            ANGELA
+            <i className="fas fa-star" />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                About Me
-              </Link>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <a
+                href="#home-section"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Home
+              </a>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
+            <li className="nav-item">
+              <a
+                href="#about-section"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                About Me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#projects-section"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Projects
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Graphic Design
-              </Link>
+              </a>
             </li>
 
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
+            <li className="nav-item">
+              <a
+                href="#contact-section"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>CONTACT</Button>}
+          {button && <Button buttonStyle="btn--outline">VISIT SITE 2</Button>}
         </div>
       </nav>
     </>

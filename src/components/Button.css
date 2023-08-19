@@ -5,8 +5,7 @@
 }
 
 .btn {
-  padding: 8px 20px;
-  border-radius: 2px;
+  padding: 12px 26px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -16,6 +15,7 @@
   background-color: var(--primary);
   color: var(--secondary);
   border: 1px solid var(--primary);
+  border-radius: 30px;
 }
 
 .btn--outline {
@@ -24,6 +24,7 @@
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
+  border-radius: 30px;
 }
 
 .btn--medium {

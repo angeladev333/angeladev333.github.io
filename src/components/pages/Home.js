@@ -3,15 +3,17 @@ import "../../App.css";
 import Hero from "../Hero";
 import Footer from "../Footer";
 import Cards from "../Cards";
+import AboutMe from "./AboutMe";
 
 function Home() {
   return (
     <>
       <div className="app-content">
-        <Hero />
+        <Hero id="home-section" />
       </div>
-      <Cards />
-      <Footer />
+      <AboutMe id="about-section" />
+      <Cards id="projects-section" />
+      <Footer id="contact-section" />
     </>
   );
 }

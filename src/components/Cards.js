@@ -2,9 +2,9 @@ import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
 
-function Cards() {
+function Cards(props) {
   return (
-    <div className="cards">
+    <div id={props.id} className="cards">
       <h1>PROJECTS! :D</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
