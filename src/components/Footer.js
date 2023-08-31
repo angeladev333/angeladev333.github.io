@@ -7,13 +7,7 @@ function Footer(props) {
   return (
     <div id={props.id} className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">Let's Get In Touch!</p>
-        <p className="footer-subscription-text">
-          <a href="mailto: angela.xu.dev@gmail.com">
-            {" "}
-            Email me for any work inquiries{" "}
-          </a>
-        </p>
+        <p className="footer-subscription-heading">Let's Connect!</p>
         <div className="input-areas">
           <form>
             <input
@@ -22,7 +16,6 @@ function Footer(props) {
               placeholder="Your Email"
               className="footer-input"
             />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
           </form>
         </div>
       </section>
@@ -54,7 +47,7 @@ function Footer(props) {
               Angela <i className="fas fa-star" />
             </Link>
           </div>
-          <small className="website-rights">Angela Xu © 2020</small>
+          <small className="website-rights">Angela Xu © 2023</small>
           <div className="social-icons">
             <Link
               className="social-icon-link instagram"

@@ -2,11 +2,11 @@
   --primary: #fff;
   --secondary: #301934;
   --tertiary: #bd8ea4;
-  --quaternary: #d1978e33;
+  --quaternary: #f9cac533;
 }
 
 .footer-container {
-  background: linear-gradient(var(--secondary) 0%, var(--tertiary) 100%);
+  background: var(--secondary);
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
@@ -37,10 +37,6 @@
   font-size: 24px;
 }
 
-.footer-subscription-text {
-  margin-bottom: 24px;
-  font-size: 20px;
-}
 
 .footer-input {
   padding: 8px 20px;

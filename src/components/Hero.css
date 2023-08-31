@@ -2,6 +2,7 @@
   --primary: #fff;
   --secondary: #301934;
   --tertiary: #bd8ea4;
+  --quaternary: #f9cac533;
 }
 
 iframe {
@@ -21,7 +22,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; /* make text left-aligned */
-  box-shadow: inset 0 0 0 1000px #d1978e33;
+  box-shadow: inset 0 0 0 1000px var(--quaternary);
   object-fit: contain;
   z-index: 3;
   padding: 0px 69px; /* add padding to make text not touch the edges */
@@ -48,7 +49,7 @@ spline-viewer {
   color: var(--tertiary); /* Replace with your desired color */
 }
 
-.hero-container p {
+.hero-container .text-description {
   margin-top: 8px;
   color: var(--secondary);
   font-size: 30px;
@@ -59,6 +60,14 @@ spline-viewer {
   position: absolute;
   top: 150px;
   z-index: 2;
+}
+
+.text-position {
+  margin-top: 8px;
+  color: var(--tertiary);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 .hero-btns {

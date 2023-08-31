@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./Hero.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Hero(props) {
   return (
@@ -12,12 +13,13 @@ function Hero(props) {
       ></spline-viewer>
 
       <div className="description">
+        <p className="text-position">SOFTWARE ENGINEER</p>
         <h1>
           Hey, I'm
           <br />
           <span className="angela-name">Angela Skie Xu.</span>
         </h1>
-        <p>
+        <p className="text-description">
           I am a Computer Science student
           <br /> at University of Waterloo
         </p>
@@ -37,7 +39,13 @@ function Hero(props) {
             buttonStyle="btn--outline"
             buttonSize="btn--large"
           >
-            PROJECTS
+            <FontAwesomeIcon
+              icon="fa-brands fa-github"
+              size="lg"
+              onClick={() =>
+                window.open("https://github.com/angeladev333", "_blank")
+              }
+            />
           </Button>
         </div>
       </div>

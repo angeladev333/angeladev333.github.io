@@ -2,7 +2,7 @@
   --primary: #fff;
   --secondary: #301934;
   --tertiary: #bd8ea4;
-  --quaternary: #d1978e33;
+  --quaternary: #f9cac533;
 }
 
 .about__content {
@@ -23,6 +23,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  max-width: 1120px;
+  width: 90%;
 }
 
 .about__container p {
@@ -32,4 +34,6 @@
 
 .about__message {
   text-align: center;
+  white-space: pre-line;
+  font-size: 20px;
 }

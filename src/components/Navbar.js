@@ -74,7 +74,16 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">VISIT SITE 2</Button>}
+          {button && (
+            <Button
+              buttonStyle="btn--outline"
+              onClick={() =>
+                window.open("https://angela-xu-site-ii.super.site/", "_blank")
+              }
+            >
+              VISIT SITE 2
+            </Button>
+          )}
         </div>
       </nav>
     </>
