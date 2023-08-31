@@ -8,38 +8,36 @@ function Footer(props) {
     <div id={props.id} className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">Let's Connect!</p>
+
         <div className="input-areas">
-          <form>
+          <form className="input-form">
+            Your Name
+            <input
+              type="name"
+              name="name"
+              placeholder="What's your name"
+              className="footer-input"
+            />
+            Your Email
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="What's your email?"
+              className="footer-input"
+            />
+            Message
+            <input
+              type="message"
+              name="message"
+              placeholder="Type any message you want to send to me here :)"
               className="footer-input"
             />
           </form>
+          <Button>Send</Button>
+          {/* add an icon */}
         </div>
       </section>
-      <div className="footer-links">
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
-            <h2>About Me</h2>
-            <Link to="/sign-up">How it works</Link>
-          </div>
-          <div className="footer-link-items">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-          </div>
-          <div className="footer-link-items">
-            <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-          </div>
-        </div>
-      </div>
+
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
@@ -47,7 +45,9 @@ function Footer(props) {
               Angela <i className="fas fa-star" />
             </Link>
           </div>
-          <small className="website-rights">Angela Xu © 2023</small>
+          <small className="website-rights">
+            Designed & Built by Angela Xu 💗
+          </small>
           <div className="social-icons">
             <Link
               className="social-icon-link instagram"
