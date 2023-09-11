@@ -14,27 +14,39 @@
   align-items: center;
   border-radius: 25px 25px 0px 0px;
   z-index: 10;
+  width: 100%;
 }
 
-.footer-subscription {
+.footer-email {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
   margin-bottom: 24px;
   padding: 24px;
   color: #fff;
+  width: 80%;
 }
 
-.footer-subscription > p {
+.footer-email > p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-.footer-subscription-heading {
-  margin-bottom: 24px;
+.footer-email-text {
   font-size: 24px;
+}
+
+.footer-email-heading {
+  margin-bottom: 24px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.footer-email-wrap {
+  text-align: left;
+}
+
+.footer-email-top {
 }
 
 .input-areas {
@@ -48,7 +60,8 @@
 }
 
 .footer-input {
-  padding: 8px 20px;
+  padding: 10px 30px;
+  margin-top: 10px;
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
@@ -75,7 +88,7 @@
 
 .social-media-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 1000px;
@@ -86,7 +99,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 3rem;
   width: 240px;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: var(--quaternary);
 }
 
 .social-logo {

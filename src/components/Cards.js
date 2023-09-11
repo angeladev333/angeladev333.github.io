@@ -10,6 +10,14 @@ function Cards(props) {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
+              src="/elements/images/visioncraftai.png"
+              text="visioncraft.ai"
+              description="VisionCraft is a new way to capture and analyze your hardware setup, unlocking a wealth of possibilities."
+              techstack="Next.js, Tailwind CSS, Google Cloud, OpenAI API, Yolo v3, PyPDF, IPFS, Vercel"
+              collaboration="In collaboration with Ian Korovinsky, Brian Yan, and Lucy Qi"
+              path="https://github.com/angeladev333/visioncraft-ai"
+            />
+            <CardItem
               src="/elements/images/weatherwear1.png"
               text="WeatherWear"
               description="WeatherWear is a web application that generates recommended outfits using AI based on the current weather in your location. Users input their location and clothing style and are provided with outfit recommendations tailored to the current temperature and precipitation."
@@ -17,6 +25,8 @@ function Cards(props) {
               collaboration="In collaboration with Jessica Ding, Polly Liu, and Jiwon Kim"
               path="https://github.com/angeladev333/WeatherWear"
             />
+          </ul>
+          <ul className="cards__items">
             <CardItem
               src="/elements/images/wikiLearn-banner.png"
               text="WikiLearn"
@@ -25,8 +35,6 @@ function Cards(props) {
               collaboration="In collaboration with Emma Huang, Richard Shuai, and Carolyn Zhang"
               path="https://github.com/angeladev333/deltahacks-race"
             />
-          </ul>
-          <ul className="cards__items">
             <CardItem
               src="/elements/images/EnergyCapitalist.png"
               text="Energy Capitalist"
@@ -35,6 +43,8 @@ function Cards(props) {
               collaboration="In collaboration with Micah Omondi and Olubukunmi Kadri"
               path="https://final-cssi-project.angelaxu333.repl.co/"
             />
+          </ul>
+          <ul className="cards__items">
             <CardItem
               src="/elements/images/travl.png"
               text="TRAV.L"

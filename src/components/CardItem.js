@@ -1,4 +1,7 @@
 import React from "react";
+// TODO
+// carousel videos, images
+// make icon larger
 
 function CardItem(props) {
   return (
