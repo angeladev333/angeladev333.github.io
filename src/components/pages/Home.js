@@ -8,12 +8,14 @@ import AboutMe from "./AboutMe";
 function Home() {
   return (
     <>
-      <div className="app-content">
-        <Hero id="home-section" />
+      <div className="app-container">
+        <div className="app-content">
+          <Hero id="home-section" />
+        </div>
+        <AboutMe id="about-section" />
+        <Cards id="projects-section" />
+        <Footer id="contact-section" />
       </div>
-      <AboutMe id="about-section" />
-      <Cards id="projects-section" />
-      <Footer id="contact-section" />
     </>
   );
 }

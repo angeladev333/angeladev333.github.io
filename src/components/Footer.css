@@ -59,6 +59,10 @@
   flex-direction: column;
 }
 
+.input-form textarea {
+  padding: 3rem 5rem;
+}
+
 .footer-input {
   padding: 10px 30px;
   margin-top: 10px;

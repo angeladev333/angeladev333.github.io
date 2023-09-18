@@ -36,7 +36,7 @@ function Hero(props) {
           </Button>
           <Button
             className="btns"
-            buttonStyle="btn--outline"
+            buttonStyle="btn--primary"
             buttonSize="btn--large"
           >
             <FontAwesomeIcon
