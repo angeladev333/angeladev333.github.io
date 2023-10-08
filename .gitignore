@@ -5,6 +5,9 @@ client/node_modules
 client/.pnp
 client/.pnp.js
 
+# backend dependencies
+server/node_modules
+
 # frontend testing
 client/coverage
 
