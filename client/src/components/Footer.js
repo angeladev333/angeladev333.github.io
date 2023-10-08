@@ -1,14 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 import "./Footer.css";
-import { Link } from "react-router-dom";
 
 function Footer(props) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   const handleFormSubmit = async (event) => {
+    event.preventDefault();
 
-  }
-  
+    try {
+      const response = await fetch("http://localhost:5000/send", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await response.json();
+
+      if (data.status === "success") {
+        alert("Message Sent.");
+        setFormData({
+          // reset the form
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else if (data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    } catch (error) {
+      console.error("There was an error sending the message", error);
+    }
+  };
+
   return (
     <div id={props.id} className="footer-container">
       <section className="footer-email">
@@ -18,30 +57,33 @@ function Footer(props) {
             <p className="footer-email-heading">Contact Me</p>
           </div>
           <div className="social-icons">
-            <Link
+            <a
               className="social-icon-link instagram"
-              to="/"
+              href="https://www.instagram.com/a.ngela_xu/"
               target="_blank"
               aria-label="Instagram"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-instagram" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link linkedin"
-              to="/"
+              href="https://www.linkedin.com/in/angela-xu/"
               target="_blank"
               aria-label="LinkedIn"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link github"
-              to="/"
+              href="https://github.com/angeladev333"
               target="_blank"
               aria-label="Github"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github" />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -51,6 +93,8 @@ function Footer(props) {
             <input
               type="name"
               name="name"
+              value={formData.name}
+              onChange={handleInputChange}
               placeholder="What's your name?"
               className="footer-input"
             />
@@ -58,6 +102,8 @@ function Footer(props) {
             <input
               type="email"
               name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               placeholder="What's your email?"
               className="footer-input"
             />
@@ -65,12 +111,14 @@ function Footer(props) {
             <textarea
               type="message"
               name="message"
+              value={formData.message}
+              onChange={handleInputChange}
               placeholder="Type any message you want to send to me here :)"
               className="footer-input"
             />
+            {/* add an icon */}
+            <Button type="submit">Send</Button>
           </form>
-          <Button>Send</Button>
-          {/* add an icon */}
         </div>
       </section>
 
