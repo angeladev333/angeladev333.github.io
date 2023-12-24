@@ -21,7 +21,7 @@ function Footer(props) {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/send", {
+      const response = await fetch("http://localhost:3002/send", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {

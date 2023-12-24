@@ -8,6 +8,25 @@ function Cards(props) {
       <h1>PROJECTS! :D</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
+          {/* TODO: do json and auto format */}
+          <ul className="cards__items">
+            <CardItem
+              src="/elements/images/heckler1.png"
+              text="hecklerAI"
+              description="Heckler.AI monitors hand and arm gestures, interprets facial expressions from smiles to looking disengaged, and evaluates your posture. 'Elevate Your Presence, Perfect Your Pitch.'"
+              techstack="Python, OpenCV, Mediapipe, Taipy"
+              collaboration="In collaboration with Miranda Chen, Joudat Haroon, and Nathan Jang"
+              path="https://devpost.com/software/heckler-ai"
+            />
+            <CardItem
+              src="/elements/images/Harbored.png"
+              text="Harbor.ed"
+              description="Harbor.ed is an online space which identifies when a user is particularly sad and prompts the sea creatures to provide extra comfort, ensuring a personalized and empathetic experience."
+              techstack="React.js, Three.js, Tailwind CSS, OpenCV, Python, AWS, Cohere, Infobip, Kubernetes, Docker, MongoDB"
+              collaboration="In collaboration with Linda Wang, Nathan Chung, and Richard Shuai"
+              path="https://devpost.com/software/harbor-ed"
+            />
+          </ul>
           <ul className="cards__items">
             <CardItem
               src="/elements/images/visioncraftai.png"

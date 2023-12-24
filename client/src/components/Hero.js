@@ -3,6 +3,7 @@ import "../App.css";
 import { Button } from "./Button";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ModelDonut } from "./Models";
 
 function Hero(props) {
   return (
@@ -11,9 +12,10 @@ function Hero(props) {
         loading-anim
         url="https://prod.spline.design/xJCPLlJbgJRcYTut/scene.splinecode"
       ></spline-viewer>
+      {/* <ModelDonut /> */}
 
       <div className="description">
-        <p className="text-position">SOFTWARE ENGINEER</p>
+        <p className="text-position">SOFTWARE ENGINEER & DESIGNER</p>
         <h1>
           Hey, I'm
           <br />
@@ -29,7 +31,7 @@ function Hero(props) {
             buttonStyle="btn--primary"
             buttonSize="btn--large"
             onClick={() =>
-              window.open("/assets/Angela_Xu_Resume_Apr2023.pdf", "_blank")
+              window.open("/assets/Angela_Xu_Resume_3.3.pdf", "_blank")
             }
           >
             RESUME <i className="fas fa-arrow-circle-down"></i>
