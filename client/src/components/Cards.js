@@ -4,15 +4,17 @@ import "./Cards.css";
 
 function Cards(props) {
   return (
-    <div id={props.id} className="cards">
-      <h1>PROJECTS! :D</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
+    <div id={props.id} className="py-16 bg-white">
+      <h1 className="text-center text-4xl text-secondary lg:text-5xl">
+        PROJECTS
+      </h1>
+      <div className="flex flex-col items-center max-w-5xl mx-auto">
+        <div className="relative my-12">
           {/* TODO: do json and auto format */}
-          <ul className="cards__items">
+          <ul className="mb-6 flex flex-wrap justify-center">
             <CardItem
               src="/elements/images/heckler1.png"
-              text="hecklerAI"
+              text="HecklerAI"
               description="Heckler.AI monitors hand and arm gestures, interprets facial expressions from smiles to looking disengaged, and evaluates your posture. 'Elevate Your Presence, Perfect Your Pitch.'"
               techstack="Python, OpenCV, Mediapipe, Taipy"
               collaboration="In collaboration with Miranda Chen, Joudat Haroon, and Nathan Jang"
@@ -27,7 +29,7 @@ function Cards(props) {
               path="https://devpost.com/software/harbor-ed"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="mb-6 flex flex-wrap justify-center">
             <CardItem
               src="/elements/images/visioncraftai.png"
               text="visioncraft.ai"
@@ -45,7 +47,7 @@ function Cards(props) {
               path="https://github.com/angeladev333/WeatherWear"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="mb-6 flex flex-wrap justify-center">
             <CardItem
               src="/elements/images/wikiLearn-banner.png"
               text="WikiLearn"
@@ -63,7 +65,7 @@ function Cards(props) {
               path="https://final-cssi-project.angelaxu333.repl.co/"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="mb-6 flex flex-wrap justify-center">
             <CardItem
               src="/elements/images/travl.png"
               text="TRAV.L"
