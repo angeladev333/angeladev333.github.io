@@ -26,6 +26,7 @@ iframe {
   z-index: 3;
   padding: 0px 69px; /* add padding to make text not touch the edges */
   position: relative;
+  margin: auto 5rem;
 }
 
 spline-viewer {

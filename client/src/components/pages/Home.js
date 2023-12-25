@@ -6,6 +6,7 @@ import Projects from "../Projects";
 import AboutMe from "./AboutMe";
 
 function Home() {
+  // TODO: Make mobile compatible
   return (
     <>
       <div className="app-container">
