@@ -1,6 +1,5 @@
 import React from "react";
 import CardItem from "./CardItem";
-import "./Cards.css";
 
 function Cards(props) {
   return (
@@ -8,7 +7,7 @@ function Cards(props) {
       <h1 className="text-center text-4xl text-secondary lg:text-5xl">
         PROJECTS
       </h1>
-      <div className="flex flex-col items-center max-w-5xl mx-auto">
+      <div className="flex flex-col items-center max-w-6xl mx-auto">
         <div className="relative my-12">
           {/* TODO: do json and auto format */}
           <ul className="mb-6 flex flex-wrap justify-center">
