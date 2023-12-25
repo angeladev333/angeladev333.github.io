@@ -1,8 +1,8 @@
 import React from "react";
 import "../../App.css";
-import Hero from "../Hero";
+import Hero from "./Hero";
 import Footer from "../Footer";
-import Cards from "../Cards";
+import Projects from "../Projects";
 import AboutMe from "./AboutMe";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
           <Hero id="home-section" />
         </div>
         <AboutMe id="about-section" />
-        <Cards id="projects-section" />
+        <Projects id="projects-section" />
         <Footer id="contact-section" />
       </div>
     </>

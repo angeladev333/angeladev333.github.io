@@ -19,10 +19,10 @@ function CardItem(props) {
           </figure>
         </a>
         <div className="flex flex-col justify-between p-6">
-          <h5 className="text-lg font-bold">{props.text}</h5>
-          <p className="text-tertiary mt-4">{props.techstack}</p>
-          <p className="text-secondary mt-2">{props.description}</p>
-          <p className="text-tertiary mt-4">{props.collaboration}</p>
+          <h5 className="text-3xl font-bold">{props.text}</h5>
+          <p className="text-tertiary font-bold font-body mt-4">{props.techstack}</p>
+          <p className="text-secondary font-medium font-body mt-2">{props.description}</p>
+          <p className="text-tertiary font-medium font-body mt-4">{props.collaboration}</p>
         </div>
       </li>
     </>
