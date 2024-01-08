@@ -58,7 +58,7 @@ function Footer(props) {
           <p className="text-6xl mb-4">Contact Me</p>
           <p className="text-xl font-light border-b-4 border-quaternary pb-4">
             You can also email me at <br></br>
-            <a href="mailto:angela.xu.dev@gmail.com" className="font-normal">
+            <a href="mailto:angela.xu.dev@gmail.com" className="font-light">
               angela.xu.dev@gmail.com
             </a>
           </p>
@@ -112,7 +112,7 @@ function Footer(props) {
                   onChange={handleInputChange}
                   required=""
                   placeholder="What's your name?"
-                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ function Footer(props) {
                   onChange={handleInputChange}
                   required=""
                   placeholder="What's your email?"
-                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
                 />
               </div>
             </div>
