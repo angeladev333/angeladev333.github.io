@@ -1,6 +1,9 @@
 import React from "react";
 
 function CardItem(props) {
+
+  // TODO: Make carousel for projects
+  // TODO: project links with clickable icons (devpost, github, link, etc.)
   return (
     <>
       <li className="flex flex-col justify-start items-center bg-primary max-w-[690px] min-h-[250px] text-center rounded-lg transition-all ease-in-out flex-1 m-4 shadow-lg">

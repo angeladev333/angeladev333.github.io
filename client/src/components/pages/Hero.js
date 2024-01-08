@@ -3,16 +3,18 @@ import "../../App.css";
 import { Button } from "../Button";
 import "./../Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ModelDonut } from "../Models";
+// import { ModelCapy } from "../Models";
 
 function Hero(props) {
+  // TODO: add type writer effect
   return (
     <div id={props.id} className="hero-container">
-      <spline-viewer
+      <img className="scale-125 translate-x-16" src="/elements/images/AngelaWorking.png" alt="Angela Working" />
+      {/* <spline-viewer
         loading-anim
         url="https://prod.spline.design/xJCPLlJbgJRcYTut/scene.splinecode"
-      ></spline-viewer>
-      {/* <ModelDonut /> */}
+      ></spline-viewer> */}
+      {/* <ModelCapy /> */}
 
       <div className="description">
         <p className="text-position">SOFTWARE ENGINEER & DESIGNER</p>

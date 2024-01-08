@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
-import "./Footer.css";
 
 function Footer(props) {
   const [formData, setFormData] = useState({
@@ -49,16 +48,23 @@ function Footer(props) {
   };
 
   return (
-    <div id={props.id} className="footer-container">
-      <section className="footer-email">
-        <div className="footer-email-wrap">
-          <div className="footer-email-top">
-            <p className="footer-email-text">Let's Connect!</p>
-            <p className="footer-email-heading">Contact Me</p>
-          </div>
-          <div className="social-icons">
+    <div className="text-primary bg-secondary rounded-t-3xl">
+      <div
+        className="container flex flex-col md:flex-row lg:max-w-5xl w-full px-12 pt-24 mx-auto section"
+        id="contact-form"
+      >
+        <div className="md:w-1/3 w-full">
+          <h1 className="text-4xl mb-4">Let's Connect!</h1>
+          <p className="text-6xl mb-4">Contact Me</p>
+          <p className="text-xl font-light border-b-4 border-quaternary pb-4">
+            You can also email me at <br></br>
+            <a href="mailto:angela.xu.dev@gmail.com" className="font-normal">
+              angela.xu.dev@gmail.com
+            </a>
+          </p>
+          <span className="flex justify-between mt-6 mx-auto p-6">
             <a
-              className="social-icon-link instagram"
+              className="text-white text-3xl cursor-pointer no-underline"
               href="https://www.instagram.com/a.ngela_xu/"
               target="_blank"
               aria-label="Instagram"
@@ -67,7 +73,7 @@ function Footer(props) {
               <i className="fab fa-instagram" />
             </a>
             <a
-              className="social-icon-link linkedin"
+              className="text-white text-3xl cursor-pointer no-underline"
               href="https://www.linkedin.com/in/angela-xu/"
               target="_blank"
               aria-label="LinkedIn"
@@ -76,7 +82,7 @@ function Footer(props) {
               <i className="fab fa-linkedin" />
             </a>
             <a
-              className="social-icon-link github"
+              className="text-white text-3xl cursor-pointer no-underline"
               href="https://github.com/angeladev333"
               target="_blank"
               aria-label="Github"
@@ -84,56 +90,80 @@ function Footer(props) {
             >
               <i className="fab fa-github" />
             </a>
-          </div>
+          </span>
         </div>
-
-        <div className="input-areas">
-          <form className="input-form" onSubmit={handleFormSubmit}>
-            Your Name
-            <input
-              type="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              placeholder="What's your name?"
-              className="footer-input"
-            />
-            Your Email
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              placeholder="What's your email?"
-              className="footer-input"
-            />
-            Message
-            <textarea
-              type="message"
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              placeholder="Type any message you want to send to me here :)"
-              className="footer-input"
-            />
-            {/* add an icon */}
-            <Button type="submit">Send</Button>
+        <div className="md:w-2/3 w-full mt-10 md:mt-0 md:pl-28">
+          <form
+            action="send-contact.php"
+            method="post"
+            id="submit-contact-form"
+            onSubmit={handleFormSubmit}
+          >
+            <div className="p-2 w-full">
+              <div className="relative">
+                <label for="name" className="leading-7 py-4 text-lg">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required=""
+                  placeholder="What's your name?"
+                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                />
+              </div>
+            </div>
+            <div className="p-2 w-full">
+              <div className="relative">
+                <label
+                  for="email"
+                  className="leading-7 py-4 text-lg text-gray-900"
+                >
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required=""
+                  placeholder="What's your email?"
+                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                />
+              </div>
+            </div>
+            <div className="p-2 w-full">
+              <div className="relative">
+                <label
+                  for="message"
+                  className="leading-7 py-4 text-lg text-gray-900"
+                >
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required=""
+                  placeholder="Type any message you want to send to me here :)"
+                  className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
+                ></textarea>
+              </div>
+            </div>
+            <div className="p-2 w-full flex justify-center">
+              <Button type="submit">Send ✉</Button>
+            </div>
           </form>
         </div>
-      </section>
-
-      <section className="social-media">
-        <div className="social-media-wrap">
-          {/* <div className="footer-logo">
-            <Link to="/" className="social-logo">
-              Angela <i className="fas fa-star" />
-            </Link>
-          </div> */}
-          <small className="website-rights">
-            Designed & Built by Angela Xu 💗
-          </small>
-        </div>
-      </section>
+      </div>
+      <div className="flex justify-center p-12">
+        Designed & Built by Angela Xu 💗
+      </div>
     </div>
   );
 }
