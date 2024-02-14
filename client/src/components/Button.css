@@ -6,7 +6,7 @@
 
 .btn {
   padding: 12px 26px;
-  min-width: 150px;
+  min-width: none;
   outline: none;
   border: none;
   cursor: pointer;
@@ -21,6 +21,7 @@
 
 .btn--outline {
   background-color: transparent;
+  min-width: 150px;
   color: #fff;
   padding: 8px 20px;
   border: 1px solid var(--primary);
@@ -35,13 +36,13 @@
 
 .btn--large {
   padding: 12px 26px;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
-.btn--medium:hover,
+/* .btn--medium:hover,
 .btn--large:hover {
   background: #fff;
   color: var(--tertiary);
   transition: all 0.3s ease-out;
   border: 1px solid var(--primary);
-}
+} */
