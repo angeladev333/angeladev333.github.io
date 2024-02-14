@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 
+// TODO: consider using a database or https://sendgrid.com/en-us/solutions/email-api
+
 function Footer(props) {
   const [formData, setFormData] = useState({
     name: "",
